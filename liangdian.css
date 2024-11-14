@@ -1,0 +1,28 @@
+.blurred-background-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 或者你需要的任何高度 */
+    overflow: hidden; /* 防止内容溢出 */
+}
+
+.blurred-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('gekou.jpg'); /* 替换为你的图片路径 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(10px) brightness(0.6); /* 应用虚化效果 */
+    z-index: -1; /* 确保伪元素在内容层之下 */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* 确保内容在伪元素之上 */
+    color: #fff; /* 或者你需要的任何颜色 */
+    text-align: center; /* 居中显示内容，可选 */
+    padding: 20px; /* 可选，为内容添加内边距 */
+}

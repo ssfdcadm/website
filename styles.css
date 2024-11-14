@@ -1,0 +1,9 @@
+body {
+    background-image: url('background.jpg'); /* 替换为你的图片路径 */
+    background-size: cover; /* 图片按比例缩放以覆盖整个背景 */
+    background-repeat: no-repeat; /* 防止图片重复 */
+    background-position: center; /* 图片居中显示 */
+    margin: 0; /* 移除默认的边距 */
+    padding: 0; /* 移除默认的内边距 */
+    height: 100vh; /* 使body高度等于视口高度 */
+}
